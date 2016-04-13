@@ -4,7 +4,8 @@ echo "<h1>Lamp Lamp</h1>";
 
 $mysqli = new mysqli("mysql", "root", "supersecret123");
 if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error."";
+    echo "<div><b>Server may still be booting up...</b></div>";
     exit(0);
 }
 
